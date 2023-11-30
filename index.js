@@ -1,5 +1,22 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  //console.log(array)
+  //console.log(target)
+  for (const num in array) {
+    //console.log(array[num]);
+    for (const num2 in array) {
+      
+      if (num !== num2) {
+        //console.log(array[num]+array[num2]);
+        if (array[num]+array[num2]==target) {
+        return "true"
+        break
+        }
+      }
+      else {}
+    }
+  }
+  return "false"
 }
 
 /* 
