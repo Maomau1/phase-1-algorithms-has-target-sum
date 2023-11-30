@@ -9,14 +9,14 @@ function hasTargetSum(array, target) {
       if (num !== num2) {
         //console.log(array[num]+array[num2]);
         if (array[num]+array[num2]==target) {
-        return "true"
+        return true
         break
         }
       }
       else {}
     }
   }
-  return "false"
+  return false
 }
 
 /* 
