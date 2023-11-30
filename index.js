@@ -21,7 +21,8 @@ function hasTargetSum(array, target) {
 
 /* 
   Write the Big O time complexity of your function here
-*/
+O(n^2)
+  */
 
 /* 
   Add your pseudocode here
@@ -29,7 +30,14 @@ function hasTargetSum(array, target) {
 
 /*
   Add written explanation of your solution here
-*/
+1. loop over array.
+let array values be i=array[num] and j=array[num2].
+for each element i add it to the element j by looping over the array once more.
+index num must be different than index num2
+2. if value of i+j equals target then break and return "true" otherwise
+continue the loop.
+3. if at the end of the iteration the condition isn't satisfied then return "false"
+ */
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
